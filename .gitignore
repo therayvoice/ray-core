@@ -1,3 +1,10 @@
+# Uglified
+ray-core.min.js
+
+# Tests
+tests
+test.js
+
 # Logs
 logs
 *.log
