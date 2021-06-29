@@ -1,6 +1,6 @@
 {
   "name": "ray-core",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "A utility library for ray-userland software.",
   "main": "ray-core.min.js",
   "scripts": {

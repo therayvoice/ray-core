@@ -1,20 +1,26 @@
 const authorNames = "Ray Voice, Alina Voice, Anna Voice";
-const version = "v0.0.7";
+const version = "v0.0.8";
 
 module.exports = {
   lastWords: words => {
     console.log(words);
     process.exit();
   },
-  sendJSON: (res, json, late) => {
+  funcAnime: function (func) {
+    if (func !== undefined) func();
+    return this;
+  },
+  sendJSON: function (res, json, late, callback) {
     //express's send, but can be used on other frameworks
     setTimeout(()=>{
+      this.funcArgInit(callback);
       res.send(json);
     }, late);  
   },
-  sendFile: (res, fileURL, late) => {
+  sendFile: function (res, fileURL, late, callback) {
     //express's sendFile, but can be used on other frameworks
     setTimeout(()=>{
+      this.funcArgInit(callback);
       res.sendFile(fileURL);
     }, late);  
   },
