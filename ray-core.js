@@ -1,5 +1,5 @@
 const authorNames = "Ray Voice, Alina Voice, Anna Voice";
-const version = "v0.0.9";
+const version = "v0.1.0";
 
 module.exports = {
   lastWords: words => {
@@ -13,14 +13,14 @@ module.exports = {
   sendJSON: function (res, json, late, callback) {
     //express's send, but can be used on other frameworks
     setTimeout(()=>{
-      this.funcArgInit(callback);
+      this.funcAnime(callback);
       res.send(json);
     }, late);  
   },
   sendFile: function (res, fileURL, late, callback) {
     //express's sendFile, but can be used on other frameworks
     setTimeout(()=>{
-      this.funcArgInit(callback);
+      this.funcAnime(callback);
       res.sendFile(fileURL);
     }, late);  
   },
@@ -29,3 +29,4 @@ module.exports = {
     return arg;
   }
 }
+
