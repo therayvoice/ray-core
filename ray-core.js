@@ -1,5 +1,5 @@
 const authorNames = "Ray Voice, Alina Voice, Anna Voice";
-const version = "v0.0.8";
+const version = "v0.0.9";
 
 module.exports = {
   lastWords: words => {
